@@ -21,6 +21,7 @@ while True:
         try:
             #c.send(now)
             c.send(temp)
+            break
         except:
             break
         sleep(1)
