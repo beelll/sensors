@@ -20,7 +20,7 @@ def getTemperature():
             print("Humidity: %d %%" % result.humidity)
             break
         time.sleep(1)
-    return str(result.temperature) + ':' + str(result.humidity)
+    return str(result.temperature) + ',' + str(result.humidity)
 
 
 # Call getTemperature() only when it is executed directry

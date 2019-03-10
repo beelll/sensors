@@ -1,5 +1,5 @@
 import socket
-import get_temperature
+import getTemperature
 from datetime import datetime
 from time import sleep
 
@@ -16,8 +16,8 @@ while True:
     print(c.recv(4096))
     while True:
         print('sending')
-        now = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
-        temp = get_temperature.getTemperature()
+        #now = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+        temp = getTemperature.getTemperature()
         try:
             #c.send(now)
             c.send(temp)
